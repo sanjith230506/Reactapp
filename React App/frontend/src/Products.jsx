@@ -17,7 +17,7 @@ export default function Products({ addToCart }) {
       const token = localStorage.getItem("token");
 
       try {
-        const res = await fetch("http://localhost:5000/api/products", {
+        const res = await fetch("http://56.228.25.187:5000/api/auth/login", {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
